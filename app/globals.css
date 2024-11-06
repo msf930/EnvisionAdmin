@@ -3,15 +3,23 @@
 @tailwind utilities;
 
 
-.mainCont{
-  display: flex;
-  flex-direction: column;
+:root {
+    --bg-blue-color: #8DA9C4;
+    --bg-white-color: #ffffff;
+    --bg-grey-color: #E6E6E6;
+
+    --font-blue-color: #0B2545;
+    --font-white-color: #ffffff;
+    --font-black-color: #000000;
+
+    --font-size-h1: 64px;
+    --font-size-h2: 44px;
+    --font-size-h3: 32px;
+    --font-size-h4: 28px;
+    --font-size-p: 20px;
+
+    --border-radius: 10px;
+
+    --box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.2);
 }
-.imgCont{
-  position: relative;
-  height: 400px;
-  width: auto;
-}
-.image{
-  
-}
+

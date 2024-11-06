@@ -1,0 +1,15 @@
+.slideCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.slideText{
+    width: 70%;
+}
+.slideName{
+    width: 70%;
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+.footerCont{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footerTopCont{
+    background-color: var(--bg-grey-color);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footerLogoCont{
+    position: relative;
+    width: 150px;
+    height: 94px;
+}
+.footerContactCont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footerBottomCont{
+    background-color: #2a2a2a;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
