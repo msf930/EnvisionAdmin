@@ -2,13 +2,13 @@
     background-color: var(--bg-blue-white);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 680px;
+    height: 500px;
 }
 .contactContBlue{
     background-color: var(--bg-blue-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 680px;
+    height: 500px;
 }
 .contactContBlue h3{
     font-size: var(--font-size-h3);

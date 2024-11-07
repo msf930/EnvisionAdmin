@@ -24,6 +24,7 @@ export default function Services() {
               alt="placeholder"
               unoptimized
               objectFit="cover"
+              
               layout="fill"
             />
           </div>
