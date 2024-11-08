@@ -18,7 +18,7 @@
 .heroLogo{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
@@ -31,6 +31,23 @@
     color: white;
     font-size: 96px;
 }
+.heroGoodbyeCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    padding: 80px;
+    background-color: var(--bg-white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+.heroGoodbyeCont h3{
+    font-size: var(--font-size-h2);
+}
+.heroGoodbyeCont p{
+    font-size: var(--font-size-p);
+}
 .logoImage{
     width: 70%;
     height: auto;
@@ -41,86 +58,169 @@
 }
 /* Section one and two */
 .aboutOneCont{
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-white-color);
+    width: 100%;
+    height: 500px;
+    text-align: center;
 }
 .goodbye{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     background-color: var(--bg-blue-color);
     width: 100%;
-    height: 650px;
-    padding: 10%;
-    gap: 60px;
+    height: 100%;
+    border-radius: 0 var(--border-radius)  var(--border-radius) 0;
+    
+}
+.goodbyeCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-white-color);
+    width: 80%;
+    height: 80%;
+    /* padding: 30px; */
+    gap: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    
 }
 .goodbye h3{
-    font-size: var(--font-size-h2);
+    text-align: center;
+    width: 80%;
+    font-size: var(--font-size-h3);
 }
 .goodbye p{
     font-size: var(--font-size-p);
-    width: 50%;
+    width: 80%;
 }
 .achieve{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    background-color: var(--bg-white-color);
+    align-items: center;
+    background-color: var(--bg-grey-color);
     width: 100%;
-    height: 650px;
-    padding: 10%;
+    height: 100%;
     gap: 60px;
 }
+.achieveCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-blue-color);
+    width: 60%;
+    height: 80%;
+    /* padding: 30px; */
+    gap: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
 .achieve h3{
+    text-align: center;
+    width: 80%;
     font-size: var(--font-size-h2);
 }
 .achieve p{
     font-size: var(--font-size-p);
     width: 80%;
 }
-.aboutOneImgCont{
-    position: absolute;
-    top: 50%;
-    right: 25%;
-    transform: translate(50%, -50%);
-    z-index: 10;
-}
-.aboutOneImg{
-    width: 500px;
-    height: auto;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-}
+
 
 /* Streamlined */
 .streamlineCont{
     background-color: var(--bg-grey-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 788px;
+    height: 500px;
+    /* gap: 63px; */
+    padding: 0 40px;
+}
+.streamlineCont2{
+    background-color: var(--bg-grey-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 670px;
+    /* gap: 63px; */
+    padding: 0 40px;
 }
 .streamlineItemCont{
     background-color: var(--bg-white-color);
-    width: 80%; 
+    width: 50%; 
+    height: 80%;
     max-width: 1180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    text-align: start;
     gap: 28px;
-    padding: 80px 100px;
+    padding: 0 40px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
 .streamlineItemCont h2{
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h4);
+    width: 100%;
 }
 
 .streamlineItemCont p{
     font-size: var(--font-size-p);
+}
+.streamlineImgCont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 45%;
+    max-width: 600px;
+}
+.streamlineImg{
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+.successListCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.streamlineList{
+    /* margin-left: 30px; */
+    font-size: var(--font-size-p);
+    list-style: disc;
+    line-height: 1.8;
+    width: 100%;
+    text-align: start;
+}
+.streamlineList li{
+    margin-left: 40px;
+    padding-left: 0;
+    float: left;
+}
+.lineCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--bg-grey-color);
+}
+.aboutLine{
+    border: none; /* Remove default border */
+    border-top: 2px solid lightgray; /* Add a black top border */
+    width: 80%; /* Adjust width as needed */
 }
 /* Success */
 .successCont{
@@ -160,7 +260,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 788px;
+    height: 600px;
 }
 .discoverItemCont{
     background-color: var(--bg-white-color);
@@ -186,7 +286,7 @@
 
 /* Who */
 .whoCont{
-    height: 788px;
+    height: 700px;
     background-color: var(--bg-grey-color);
     display: flex;
     flex-direction: column;

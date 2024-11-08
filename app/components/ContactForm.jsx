@@ -1,8 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 import styles from "./ContactForm.module.css";
+
+import homeAchieve from "../../public/homeAchieve.png";
 
 const ContactForm = ({ isStandard }) => {
   const [submitted, setSubmitted] = useState(false);
@@ -55,14 +58,14 @@ const ContactForm = ({ isStandard }) => {
       }
     >
       <div className={styles.contactLeft}>
-        <h3>Contact Us</h3>
-        <p>Call our team or email us directly</p>
-        <p>
-          111-111-1111 
-        </p>
-        <p>email@email.com</p>
+        <div className={styles.contactLeftCont}>
+          <h3>Let&apos;s Chat, Reach Out to Us</h3>
+          <p>Have questions or feedback?  We&apos;re here to help. Send us a message.</p>
+          <p>Phone: 111-111-1111 </p>
+          <p>Email: email@email.com</p>
+        </div>
       </div>
-      <div className={styles.contactRight}>
+      <div className={styles.contactCenter}>
         <form
           action={process.env.NEXT_PUBLIC_HERO_TOFU_FORM_ACTION}
           onSubmit={handleSubmit}
@@ -178,6 +181,7 @@ const ContactForm = ({ isStandard }) => {
           </div>
         </form>
       </div>
+      
     </div>
   );
 };

@@ -87,14 +87,18 @@ export default function Home() {
       </div>
       {/* Multi */}
       <div className={styles.multiCont}>
-        <h2>Break Free From Administrative Overwhelm</h2>
-        <p className={styles.multiContP}>
-          Managing a small business means juggling numerous responsibilities,
-          and back office management often becomes your heaviest burden. When
-          accounts payable, receivable, and compliance tasks consume your day,
-          it becomes nearly impossible to focus on strategic growth or maintain
-          work-life balance.
-        </p>
+        <div className={styles.multiContHead}>
+          <h2 className={styles.multiConth2}>
+            Break Free From Administrative Overwhelm
+          </h2>
+          <p className={styles.multiContP}>
+            Managing a small business means juggling numerous responsibilities,
+            and back office management often becomes your heaviest burden. When
+            accounts payable, receivable, and compliance tasks consume your day,
+            it becomes nearly impossible to focus on strategic growth or
+            maintain work-life balance.
+          </p>
+        </div>
         <div className={styles.multiItemCont}>
           <div className={styles.multiItem}>
             <h3>Achieve clarity and control</h3>
@@ -121,7 +125,7 @@ export default function Home() {
                 your sensitive information is managed securely and efficiently.
                 From paying bills to managing collections, we optimize every
                 aspect of your operations. {" "}
-                <b>
+                <b className={styles.multiPBold}>
                   Plus we&apos;ve helped businesses reduce administration time
                   by up to 40% and improve cash flow by 25% on average.
                 </b>

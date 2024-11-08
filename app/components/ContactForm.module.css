@@ -22,21 +22,38 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding-left: 80px;
+    padding: 50px 30px;
+    /* padding-left: 80px; */
+}
+.contactLeftCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--bg-blue-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    
 }
 .contactLeft h3{
     font-size: var(--font-size-h3);
     padding-bottom: 20px;
+    text-align: center;
 }
 .contactLeft p{
     font-size: var(--font-size-p);
-    max-width: 80%;
+    max-width: 70%;
+    text-align: center;
 }
-.contactRight{
+.contactCenter{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 80px;
+    /* padding-right: 80px; */
 }
 .inputGroupCont{
     display: flex;
@@ -148,4 +165,17 @@
     padding: 12px 28px;
     color: var(--bg-white-color);
     border-radius: var(--border-radius);
+}
+.contactRight{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:  50px 30px;
+    box-shadow: var(--box-shadow);
+}
+.contactRightImg{
+    border-radius: var(--border-radius);
+
 }

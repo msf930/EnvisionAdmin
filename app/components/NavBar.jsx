@@ -46,7 +46,7 @@ const NavBar = () => {
                   <Link href="/">
                     <Image
                       src={Logo}
-                      alt="Realm logo for navagation bar"
+                      alt="logo for navagation bar"
                       layout="fill"
                       objectFit="contain"
                       unoptimized
@@ -61,7 +61,7 @@ const NavBar = () => {
               <ul className="hidden sm:flex text-black text-center items-center">
                 <li className="mx-3 text-center items-center justify-center">
                   <Link href="/">
-                    <p>Home</p>
+                    <p className="text-xl">Home</p>
                   </Link>
                 </li>
                 <li className="mx-3 text-center items-center justify-center">
@@ -72,6 +72,11 @@ const NavBar = () => {
                 <li className="mx-3 text-center items-center justify-center">
                   <Link href="/services">
                     <p>Services</p>
+                  </Link>
+                </li>
+                <li className="mx-3 text-center items-center justify-center">
+                  <Link href="/blog">
+                    <p>Blog</p>
                   </Link>
                 </li>
                 <li className="mx-3 text-center items-center justify-center">
@@ -123,6 +128,15 @@ const NavBar = () => {
                         onClick={handleShowNavbar}
                       >
                         Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/blog"
+                        className={styles.navMenuLink}
+                        onClick={handleShowNavbar}
+                      >
+                        Blog
                       </Link>
                     </li>
                     <li>

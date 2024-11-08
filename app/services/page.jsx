@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 
 import hero from "../../public/servicesHero.jpg";
+import reapCheck from "../../public/reapCheck.png";
 
 import ScheduleButton from "../components/ScheduleButton";
 import ContactForm from "../components/ContactForm";
@@ -24,7 +25,6 @@ export default function Services() {
               alt="placeholder"
               unoptimized
               objectFit="cover"
-              
               layout="fill"
             />
           </div>
@@ -41,6 +41,84 @@ export default function Services() {
           on what truly matters: growing your business and achieving work-life
           balance.
         </p>
+        <div className={styles.reapListCont}>
+          <div className={styles.reapListItem}>
+            <div className={styles.reapListItemCirc}>
+              <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                <circle r="15" cx="15" cy="15" fill="#13315C" />
+              </svg>
+            </div>
+            <div className={styles.reapListItemImg}>
+              <Image
+                src={reapCheck}
+                alt="placeholder"
+                unoptimized
+                objectFit="cover"
+                placeholder="blur"
+              />
+            </div>
+            <div className={styles.reapListItemText}>
+              <p>Accounts Payable Management</p>
+            </div>
+          </div>
+          <div className={styles.reapListItem}>
+            <div className={styles.reapListItemCirc}>
+              <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                <circle r="15" cx="15" cy="15" fill="#13315C" />
+              </svg>
+            </div>
+            <div className={styles.reapListItemImg}>
+              <Image
+                src={reapCheck}
+                alt="placeholder"
+                unoptimized
+                objectFit="cover"
+                placeholder="blur"
+              />
+            </div>
+            <div className={styles.reapListItemText}>
+              <p>Accounts Receivable Management</p>
+            </div>
+          </div>
+          <div className={styles.reapListItem}>
+            <div className={styles.reapListItemCirc}>
+              <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                <circle r="15" cx="15" cy="15" fill="#13315C" />
+              </svg>
+            </div>
+            <div className={styles.reapListItemImg}>
+              <Image
+                src={reapCheck}
+                alt="placeholder"
+                unoptimized
+                objectFit="cover"
+                placeholder="blur"
+              />
+            </div>
+            <div className={styles.reapListItemText}>
+              <p>Consultation and Advisory</p>
+            </div>
+          </div>
+          <div className={styles.reapListItem}>
+            <div className={styles.reapListItemCirc}>
+              <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                <circle r="15" cx="15" cy="15" fill="#13315C" />
+              </svg>
+            </div>
+            <div className={styles.reapListItemImg}>
+              <Image
+                src={reapCheck}
+                alt="placeholder"
+                unoptimized
+                objectFit="cover"
+                placeholder="blur"
+              />
+            </div>
+            <div className={styles.reapListItemText}>
+              <p>Special Projects</p>
+            </div>
+          </div>
+        </div>
         <ScheduleButton isCenter={true} />
       </div>
       {/* Services */}
@@ -91,11 +169,12 @@ export default function Services() {
           <h2>Special Projects</h2>
           <h3>Customized Solutions for Your Business</h3>
           <p>
-            Need expert support for specific operational initiatives? We don&apos;t
-            just execute tasks—we take full ownership of special projects from
-            planning through completion. Our team ensures deadlines are met and
-            resources are used effectively, giving you peace of mind and proven
-            results.<br/> <br/> Schedule a free consultation to discover how we can
+            Need expert support for specific operational initiatives? We
+            don&apos;t just execute tasks—we take full ownership of special
+            projects from planning through completion. Our team ensures
+            deadlines are met and resources are used effectively, giving you
+            peace of mind and proven results.
+            <br /> <br /> Schedule a free consultation to discover how we can
             transform your operations and optimize your cash flow.
           </p>
           <div className={styles.btnCont}>
@@ -105,11 +184,11 @@ export default function Services() {
       </div>
       {/* Contact */}
       <div>
-        <ContactForm isStandard={true}/>
+        <ContactForm isStandard={true} />
       </div>
       {/* Footer */}
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

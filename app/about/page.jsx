@@ -4,10 +4,12 @@ import styles from "./styles.module.css";
 
 import hero from "../../public/aboutHero.jpg";
 import aboutOne from "../../public/homeAchieve.png";
+import aboutTwo from "../../public/about2.png";
+import aboutThree from "../../public/about3.png";
 import whoOne from "../../public/whoOne.png";
 
 import ScheduleButton from "../components/ScheduleButton";
-import ContactForm from "../components/ContactForm"
+import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 
 export default function About() {
@@ -17,8 +19,18 @@ export default function About() {
       <div className={styles.hero}>
         <div className={styles.heroCont}>
           <div className={styles.heroLogo}>
-            <h1>About</h1>
-            <ScheduleButton isCenter={true} />
+            <div className={styles.heroGoodbyeCont}>
+              <h3>Say Goodbye to Back Office Overwhelm</h3>
+              <p>
+                Running a small business is no easy feat. Between managing daily
+                operations and striving for growth, handling your company&apos;s
+                finances can feel like a never-ending battle. At Envision
+                Administrative Services, we transform these administrative
+                burdens into streamlined processes, freeing you to focus on what
+                truly matters: growing your business.
+              </p>
+              <ScheduleButton isCenter={false} />
+            </div>
           </div>
           <div className={styles.heroImage}>
             <Image
@@ -33,16 +45,21 @@ export default function About() {
       </div>
       {/* Section One and Two */}
       <div className={styles.aboutOneCont}>
-        <div className={styles.aboutOneImgCont}>
-          <Image
-            src={aboutOne}
-            alt="placeholder"
-            unoptimized
-            className={styles.aboutOneImg}
-          />
+        <div className={styles.achieve}>
+          <div className={styles.achieveCont}>
+            <h3>About Envision Administrative Services</h3>
+            <p>
+              Expert operational and accounting support to optimize your cash
+              flow and eliminate back office administrative burden, so you can
+              focus on what matters most.
+            </p>
+          </div>
         </div>
-        <div className={styles.goodbye}>
-          <h3>Say Goodbye to Back Office Overwhelm</h3>
+      </div>
+      {/* Streamlined */}
+      <div className={styles.streamlineCont}>
+        <div className={styles.streamlineItemCont}>
+          <h2>Achieving Work-Life Balance</h2>
           <p>
             Running a small business is no easy feat. Between managing daily
             operations and striving for growth, handling your company&apos;s
@@ -52,20 +69,24 @@ export default function About() {
             matters: growing your business.
           </p>
         </div>
-        <div className={styles.achieve}>
-          <h3>Achieving Work-Life Balance</h3>
-          <p>
-            Our mission is simple: optimize your cash flow and eliminate
-            administrative burden so you can achieve a better work-life balance.
-            By providing expert operational and accounting support tailored to
-            small businesses, we help you master your business, not your
-            paperwork. When you partner with us, you gain more than just
-            support—you gain a committed ally dedicated to your success.
-          </p>
+        <div className={styles.streamlineImgCont}>
+          <Image
+            src={aboutOne}
+            alt="placeholder"
+            unoptimized
+            objectFit="cover"
+            layout="fill"
+            placeholder="blur"
+            className={styles.streamlineImg}
+          />
         </div>
+      </div>
+      <div className={styles.lineCont}>
+        <hr className={styles.aboutLine}></hr>
       </div>
       {/* Streamlined */}
       <div className={styles.streamlineCont}>
+        
         <div className={styles.streamlineItemCont}>
           <h2>Streamlined Operations, Optimized Cash Flow</h2>
           <p>
@@ -77,9 +98,58 @@ export default function About() {
             is managed with the utmost care and expertise.
           </p>
         </div>
+        <div className={styles.streamlineImgCont}>
+          <Image
+            src={aboutTwo}
+            alt="placeholder"
+            unoptimized
+            objectFit="cover"
+            layout="fill"
+            placeholder="blur"
+            className={styles.streamlineImg}
+          />
+        </div>
+      </div>
+      <div className={styles.lineCont}>
+        <hr className={styles.aboutLine}></hr>
+      </div>
+      {/* Streamlined */}
+      <div className={styles.streamlineCont2}>
+        
+        <div className={styles.streamlineItemCont}>
+          <h2>Your Success Is Our Priority</h2>
+          <p>
+            With 25 years of experience in back office operations and hundreds
+            of satisfied customers across industries—from medical offices to
+            real estate agencies, construction companies to professional
+            services—we bring the expertise and reliability your business needs.
+            Our deep understanding of operational challenges and proven
+            solutions helps you overcome common hurdles like:
+          </p>
+          <div className={styles.streamlineListCont}>
+            <ul className={styles.streamlineList}>
+              <li>Time-consuming administrative tasks</li>
+              <li>Complex cash flow management</li>
+              <li>Inconsistent business processes</li>
+              <li>Operational inefficiencies</li>
+              <li>Growth-limiting paperwork</li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.streamlineImgCont}>
+          <Image
+            src={aboutThree}
+            alt="placeholder"
+            unoptimized
+            objectFit="cover"
+            layout="fill"
+            placeholder="blur"
+            className={styles.streamlineImg}
+          />
+        </div>
       </div>
       {/* Success */}
-      <div className={styles.successCont}>
+      {/* <div className={styles.successCont}>
         <h2>Your Success Is Our Priority</h2>
         <div className={styles.successInfoCont}>
           <p>
@@ -100,7 +170,7 @@ export default function About() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Discover */}
       <div className={styles.discoverCont}>
         <div className={styles.discoverItemCont}>
@@ -144,11 +214,11 @@ export default function About() {
       </div>
       {/* Contact */}
       <div>
-        <ContactForm isStandard={true}/>
+        <ContactForm isStandard={true} />
       </div>
       {/* Footer */}
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
