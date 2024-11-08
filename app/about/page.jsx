@@ -61,12 +61,12 @@ export default function About() {
         <div className={styles.streamlineItemCont}>
           <h2>Achieving Work-Life Balance</h2>
           <p>
-            Running a small business is no easy feat. Between managing daily
-            operations and striving for growth, handling your company&apos;s
-            finances can feel like a never-ending battle. At Envision
-            Administrative Services, we transform these administrative burdens
-            into streamlined processes, freeing you to focus on what truly
-            matters: growing your business.
+            Our mission is simple: optimize your cash flow and eliminate
+            administrative burden so you can achieve a better work-life balance.
+            By providing expert operational and accounting support tailored to
+            small businesses, we help you master your business, not your
+            paperwork. When you partner with us, you gain more than just
+            support—you gain a committed ally dedicated to your success.
           </p>
         </div>
         <div className={styles.streamlineImgCont}>
@@ -86,7 +86,6 @@ export default function About() {
       </div>
       {/* Streamlined */}
       <div className={styles.streamlineCont}>
-        
         <div className={styles.streamlineItemCont}>
           <h2>Streamlined Operations, Optimized Cash Flow</h2>
           <p>
@@ -115,7 +114,6 @@ export default function About() {
       </div>
       {/* Streamlined */}
       <div className={styles.streamlineCont2}>
-        
         <div className={styles.streamlineItemCont}>
           <h2>Your Success Is Our Priority</h2>
           <p>
