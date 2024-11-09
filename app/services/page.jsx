@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./styles.module.css";
 
-import hero from "../../public/servicesHero.jpg";
+import hero from "../../public/servicesHero.png";
 import reapCheck from "../../public/reapCheck.png";
 
 import ScheduleButton from "../components/ScheduleButton";
@@ -16,8 +16,112 @@ export default function Services() {
       <div className={styles.hero}>
         <div className={styles.heroCont}>
           <div className={styles.heroLogo}>
-            <h1>Services</h1>
-            <ScheduleButton isCenter={true} />
+            <div className={styles.streamlineCont}>
+              <h3>Streamline Operations, Optimize Cash Flow</h3>
+              <p>
+                Small business owners often juggle countless daily back office
+                operational and accounting tasks, draining time that should be
+                spent on strategic growth. Envision Administrative Services
+                transforms these administrative burdens into streamlined
+                processes, helping you focus on what truly matters: growing your
+                business and achieving work-life balance.
+              </p>
+              <div className={styles.reapListCont}>
+                <div className={styles.reapListItem}>
+                  <div className={styles.reapListItemCirc}>
+                    <svg
+                      height="30"
+                      width="30"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle r="15" cx="15" cy="15" fill="#13315C" />
+                    </svg>
+                  </div>
+                  <div className={styles.reapListItemImg}>
+                    <Image
+                      src={reapCheck}
+                      alt="placeholder"
+                      unoptimized
+                      objectFit="cover"
+                      placeholder="blur"
+                    />
+                  </div>
+                  <div className={styles.reapListItemText}>
+                    <p>Accounts Payable Management</p>
+                  </div>
+                </div>
+                <div className={styles.reapListItem}>
+                  <div className={styles.reapListItemCirc}>
+                    <svg
+                      height="30"
+                      width="30"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle r="15" cx="15" cy="15" fill="#13315C" />
+                    </svg>
+                  </div>
+                  <div className={styles.reapListItemImg}>
+                    <Image
+                      src={reapCheck}
+                      alt="placeholder"
+                      unoptimized
+                      objectFit="cover"
+                      placeholder="blur"
+                    />
+                  </div>
+                  <div className={styles.reapListItemText}>
+                    <p>Accounts Receivable Management</p>
+                  </div>
+                </div>
+                <div className={styles.reapListItem}>
+                  <div className={styles.reapListItemCirc}>
+                    <svg
+                      height="30"
+                      width="30"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle r="15" cx="15" cy="15" fill="#13315C" />
+                    </svg>
+                  </div>
+                  <div className={styles.reapListItemImg}>
+                    <Image
+                      src={reapCheck}
+                      alt="placeholder"
+                      unoptimized
+                      objectFit="cover"
+                      placeholder="blur"
+                    />
+                  </div>
+                  <div className={styles.reapListItemText}>
+                    <p>Consultation and Advisory</p>
+                  </div>
+                </div>
+                <div className={styles.reapListItem}>
+                  <div className={styles.reapListItemCirc}>
+                    <svg
+                      height="30"
+                      width="30"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle r="15" cx="15" cy="15" fill="#13315C" />
+                    </svg>
+                  </div>
+                  <div className={styles.reapListItemImg}>
+                    <Image
+                      src={reapCheck}
+                      alt="placeholder"
+                      unoptimized
+                      objectFit="cover"
+                      placeholder="blur"
+                    />
+                  </div>
+                  <div className={styles.reapListItemText}>
+                    <p>Special Projects</p>
+                  </div>
+                </div>
+              </div>
+              <ScheduleButton isCenter={true} />
+            </div>
           </div>
           <div className={styles.heroImage}>
             <Image
@@ -31,7 +135,7 @@ export default function Services() {
         </div>
       </div>
       {/* Streamline */}
-      <div className={styles.streamlineCont}>
+      {/* <div className={styles.streamlineCont}>
         <h3>Streamline Operations, Optimize Cash Flow</h3>
         <p>
           Small business owners often juggle countless daily back office
@@ -120,7 +224,7 @@ export default function Services() {
           </div>
         </div>
         <ScheduleButton isCenter={true} />
-      </div>
+      </div> */}
       {/* Services */}
       <div className={styles.servicesCont}>
         <div className={styles.serviceItem}>

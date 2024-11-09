@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./styles.module.css";
 
-import hero from "../../public/aboutHero.jpg";
+import hero from "../../public/aboutHero.png";
 import aboutOne from "../../public/homeAchieve.png";
 import aboutTwo from "../../public/about2.png";
 import aboutThree from "../../public/about3.png";

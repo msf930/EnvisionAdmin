@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./styles.module.css";
 
-import heroImage from "../public/homeHero.jpg";
+import heroImage from "../public/homeHero.png";
 import heroLogoImage from "../public/logoHero.png";
 import homeAchieve from "../public/homeAchieve.png";
 import streamline from "../public/streamline.png";
@@ -38,7 +38,7 @@ export default function Home() {
                       unoptimized
                       objectFit="cover"
                       layout="fill"
-                      placeholder="blur"
+                      // placeholder="blur"
                     />
                   </div>
                   <p>Streamline Operations</p>
@@ -51,7 +51,7 @@ export default function Home() {
                       unoptimized
                       objectFit="cover"
                       layout="fill"
-                      placeholder="blur"
+                      // placeholder="blur"
                     />
                   </div>
                   <p>Focus on Growth</p>
@@ -64,7 +64,7 @@ export default function Home() {
                       unoptimized
                       objectFit="cover"
                       layout="fill"
-                      placeholder="blur"
+                      // placeholder="blur"
                     />
                   </div>
                   <p>Optimize Cash Flow</p>

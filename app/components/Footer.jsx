@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Logo from "../../public/logoBlack.png";
+import Logo from "../../public/envisionLogoWide.png";
 
 import styles from "./Footer.module.css";
 

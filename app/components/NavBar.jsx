@@ -3,7 +3,7 @@
 import styles from "./NavBar.module.css";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Logo from "../../public/logoHero.png";
+import Logo from "../../public/envisionLogoWide.png";
 import Image from "next/image";
 
 const NavBar = () => {

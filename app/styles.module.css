@@ -1,32 +1,27 @@
-
-
-
 @media (max-width: 640px) {
-
 }
 
 @media (min-width: 640px) {
-
 }
 
 @media (min-width: 1000px) {
-/* Hero */
-.hero{
+  /* Hero */
+  .hero {
     position: relative;
     display: flex;
     height: 800px;
     width: 100%;
     clip-path: inset(0 0 0 0);
-}
-.heroCont{
+  }
+  .heroCont {
     position: fixed;
     height: 800px;
     width: 100%;
     top: 0;
-    left: 0; 
-}
+    left: 0;
+  }
 
-.heroTextCont{
+  .heroTextCont {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,14 +34,14 @@
     z-index: 10;
     color: var(--font-black-color);
     background-color: var(--bg-white-color);
+    opacity: 90%;
     padding: 60px;
     width: 80%;
     max-width: 1180px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    
-}
-.heroTextLeft{
+  }
+  .heroTextLeft {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,24 +49,23 @@
     text-align: center;
     gap: 30px;
     width: 80%;
-    
-}
-.heroTextLeft h1{
+  }
+  .heroTextLeft h1 {
     font-size: var(--font-size-h2);
-}
-.heroTextLeft h3{
+  }
+  .heroTextLeft h3 {
     font-size: var(--font-size-p);
-}
-.heroItemCont{
+  }
+  .heroItemCont {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center ;
+    text-align: center;
     gap: 40px;
     width: 60%;
-}
-.heroItem{
+  }
+  .heroItem {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -79,23 +73,23 @@
     align-items: center;
     font-size: var(--font-size-p);
     font-weight: bold;
-}
-.heroItemImg{
+  }
+  .heroItemImg {
     position: relative;
     width: 80px;
     height: 80px;
-}
-.logoImage{
+  }
+  .logoImage {
     width: 70%;
     height: auto;
-}
-.heroImage{
+  }
+  .heroImage {
     filter: brightness(60%);
     height: 800px;
-}
-/* Multi */
+  }
+  /* Multi */
 
-.multiCont{
+  .multiCont {
     background-color: var(--bg-grey-color);
     display: flex;
     flex-direction: column;
@@ -103,44 +97,45 @@
     align-items: center;
     gap: 60px;
     padding: 80px 0;
-}
-.multiContHead{
+  }
+  .multiContHead {
     background-color: var(--bg-blue-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 60%;
+    width: 80%;
+    max-width: 1000px;
     height: auto;
     padding: 40px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-}
-.multiConth2{
+  }
+  .multiConth2 {
     font-size: var(--font-size-h2);
     width: 80%;
     max-width: 860px;
     text-align: center;
-}
-.multiContP{
+  }
+  .multiContP {
     font-size: var(--font-size-p);
     width: 80%;
     max-width: 860px;
     text-align: center;
     margin-bottom: 30px;
-}
-.multiItemCont{
+  }
+  .multiItemCont {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: auto;
-}
-.multiItem{
+  }
+  .multiItem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -152,38 +147,38 @@
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     background-color: var(--bg-white-color);
-}
-.multiItem h3{
+  }
+  .multiItem h3 {
     font-size: var(--font-size-h3);
     text-align: center;
-}
-.multiItem p{
+  }
+  .multiItem p {
     font-size: var(--font-size-p);
-}
+  }
 
-.multiP{
+  .multiP {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     height: 100%;
-}
-.multiPBold{
+  }
+  .multiPBold {
     font-weight: 550;
     color: var(--font-blue-color);
-}
+  }
 
-/* Break */
-.breakCont{
+  /* Break */
+  .breakCont {
     background-color: var(--bg-blue-color);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 788px;
-}
-.breakItemCont{
+  }
+  .breakItemCont {
     background-color: var(--bg-white-color);
-    width: 80%; 
+    width: 80%;
     max-width: 1180px;
     display: flex;
     flex-direction: column;
@@ -194,34 +189,32 @@
     padding: 80px 100px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-}
-.breakItemCont h2{
+  }
+  .breakItemCont h2 {
     font-size: var(--font-size-h2);
-}
-.breakLine{
+  }
+  .breakLine {
     border: 1px solid black;
     width: 80%;
-}
-.breakItemCont p{
+  }
+  .breakItemCont p {
     font-size: var(--font-size-p);
-}
+  }
 
-/* Achieve */
-.achieveCont{
+  /* Achieve */
+  .achieveCont {
     background-color: var(--bg-white-color);
     height: 650px;
     display: grid;
     grid-template-columns: 60% auto;
-}
-.achieveLeft{
+  }
+  .achieveLeft {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: end; 
-    
-    
-}
-.achieveTextCont{
+    justify-content: center;
+    align-items: end;
+  }
+  .achieveTextCont {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -230,50 +223,48 @@
     width: 80%;
     gap: 30px;
     margin-right: 4%;
-}
-.achieveLeft h2{
+  }
+  .achieveLeft h2 {
     font-size: var(--font-size-h2);
-}
-.achieveLeft p{
+  }
+  .achieveLeft p {
     font-size: var(--font-size-p);
-}
-.achieveRight{
+  }
+  .achieveRight {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-.achieveImageCont{ 
+  }
+  .achieveImageCont {
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
-    
+
     width: 70%;
-    
-}
-.achieveImage{
+  }
+  .achieveImage {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     max-height: 400px;
     width: auto;
-}
+  }
 
-/* Team */
+  /* Team */
 
-.teamCont{
+  .teamCont {
     background-color: var(--bg-grey-color);
     height: 650px;
     display: grid;
     grid-template-columns: 50% auto;
-}
+  }
 
-.teamLeft{
+  .teamLeft {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.teamStatCont{
+  }
+  .teamStatCont {
     background-color: var(--bg-white-color);
     display: flex;
     justify-content: center;
@@ -282,12 +273,12 @@
     padding: 50px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-}
-.teamIconCont{
+  }
+  .teamIconCont {
     position: relative;
-    display: inline-block; 
-}
-.teamIconText{
+    display: inline-block;
+  }
+  .teamIconText {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -299,49 +290,47 @@
     gap: 10px;
     z-index: 10;
     color: var(--bg-white-color);
-}
-.teamIconText h1{
+  }
+  .teamIconText h1 {
     font-size: var(--font-size-h1);
-}
-.teamIconText p{
+  }
+  .teamIconText p {
     font-size: var(--font-size-p);
-}
-.teamRight{
+  }
+  .teamRight {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     padding: 0 3vw;
     gap: 30px;
-
-}
-.teamRight h2{
+  }
+  .teamRight h2 {
     font-size: var(--font-size-h2);
-}
-.teamRight p{
+  }
+  .teamRight p {
     font-size: var(--font-size-p);
-}
-/* Flow */
-.flowCont{
+  }
+  /* Flow */
+  .flowCont {
     background-color: var(--bg-blue-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px 0;
-
-}
-.pathTitleCont{
+  }
+  .pathTitleCont {
     width: 80%;
-}
-.pathTitleCont h2{
+  }
+  .pathTitleCont h2 {
     font-size: var(--font-size-h2);
     color: var(--font-blue-color);
     padding-bottom: 40px;
     text-align: start;
     width: 100%;
-}
-.flowStepCont{
+  }
+  .flowStepCont {
     width: 80%;
     display: grid;
     grid-template-columns: 80px 350px auto;
@@ -349,34 +338,34 @@
     gap: 5vw;
     padding-bottom: 40px;
     color: var(--font-blue-color);
-}
-.flowStepCont h1{
+  }
+  .flowStepCont h1 {
     font-size: var(--font-size-h2);
-}
-.flowStepText{
+  }
+  .flowStepText {
     width: 400px;
-}
-.flowStepCont h3{
+  }
+  .flowStepCont h3 {
     font-size: var(--font-size-h4);
-}
-.flowLineCont{
+  }
+  .flowLineCont {
     width: 80%;
     padding-bottom: 50px;
-}
-.flowLine{
+  }
+  .flowLine {
     border: 1px solid var(--font-blue-color);
     width: 100%;
-}
-/* Testimonial */
-.testCont{
+  }
+  /* Testimonial */
+  .testCont {
     background-color: var(--bg-grey-color);
     height: 550px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.testItemCont{
+  }
+  .testItemCont {
     background-color: var(--bg-white-color);
     margin: 50px;
     height: 60%;
@@ -389,46 +378,45 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-}
-.testItemCont h3{
+  }
+  .testItemCont h3 {
     font-size: var(--font-size-h3);
-}
-.carouselCont{
+  }
+  .carouselCont {
     width: 100%;
-}
-/* Reap */
+  }
+  /* Reap */
 
-.reapCont{
+  .reapCont {
     background-color: var(--bg-blue-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 10%;
-
-}
-.reapTextCont{
+    padding: 5% 0;
+  }
+  .reapTextCont {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     width: auto;
     gap: 30px;
-    
-}
-.reapCont h2{
+    width: 90%;
+  }
+  .reapCont h2 {
     font-size: var(--font-size-h2);
     text-align: center;
-}
-.reapCont h3{
+  }
+  .reapCont h3 {
     font-size: var(--font-size-h3);
     text-align: center;
-}
-.reapCont p{
+  }
+  .reapCont p {
     font-size: var(--font-size-p);
     text-align: center;
-}
-.reapListCont{
+  }
+  .reapListCont {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -440,8 +428,8 @@
     flex-wrap: wrap;
     /* border-radius: var(--border-radius);
     box-shadow: var(--box-shadow); */
-}
-.reapListItem{
+  }
+  .reapListItem {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -454,31 +442,29 @@
     padding: 20px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-}
-.reapListItem p{
+  }
+  .reapListItem p {
     text-align: center;
-    
-}
-.reapListItemText{
+  }
+  .reapListItemText {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 108px;
-}
-.reapListItemImg{
+  }
+  .reapListItemImg {
     position: relative;
     width: 30px;
     height: 30px;
     margin-top: -40px;
-    
-}
-.reapListItemCirc{
+  }
+  .reapListItemCirc {
     margin-top: -35px;
-}
-.reapBtnCont{
+  }
+  .reapBtnCont {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 }
