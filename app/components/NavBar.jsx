@@ -5,10 +5,12 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "../../public/envisionLogoWide.png";
 import Image from "next/image";
+import { usePathname  } from "next/navigation";
 
 const NavBar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [navIcon, setNavIcon] = useState(`${styles.navicon4}`);
+  const pathname = usePathname();
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -34,6 +36,10 @@ const NavBar = () => {
 
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
+
+  if (pathname.includes("/studio")) {
+    return null;
+  }
 
   return (
     <header>
