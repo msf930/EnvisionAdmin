@@ -14,7 +14,7 @@ import Footer from "../components/Footer";
 
 export default function About() {
   return (
-    <div>
+    <div className={styles.aboutCont}>
       {/* Hero */}
       <div className={styles.hero}>
         <div className={styles.heroCont}>
@@ -53,6 +53,7 @@ export default function About() {
               flow and eliminate back office administrative burden, so you can
               focus on what matters most.
             </p>
+            <ScheduleButton isCenter={true}/>
           </div>
         </div>
       </div>
@@ -147,28 +148,7 @@ export default function About() {
         </div>
       </div>
       {/* Success */}
-      {/* <div className={styles.successCont}>
-        <h2>Your Success Is Our Priority</h2>
-        <div className={styles.successInfoCont}>
-          <p>
-            With 25 years of experience in back office operations and hundreds
-            of satisfied customers across industries—from medical offices to
-            real estate agencies, construction companies to professional
-            services—we bring the expertise and reliability your business needs.
-            Our deep understanding of operational challenges and proven
-            solutions helps you overcome common hurdles like:
-          </p>
-          <div className={styles.successListCont}>
-            <ul className={styles.successList}>
-              <li>Time-consuming administrative tasks</li>
-              <li>Complex cash flow management</li>
-              <li>Inconsistent business processes</li>
-              <li>Operational inefficiencies</li>
-              <li>Growth-limiting paperwork</li>
-            </ul>
-          </div>
-        </div>
-      </div> */}
+      
       {/* Discover */}
       <div className={styles.discoverCont}>
         <div className={styles.discoverItemCont}>
@@ -187,14 +167,7 @@ export default function About() {
       <div className={styles.whoCont}>
         <h2>Who We Are</h2>
         <div className={styles.whoInfoCont}>
-          <div className={styles.whoImgCont}>
-            <Image
-              src={whoOne}
-              alt="placeholder"
-              unoptimized
-              className={styles.whoOneImg}
-            />
-          </div>
+          
           <div className={styles.whoInfoTextCont}>
             <h3>Kristina Kefalas</h3>
             <p>

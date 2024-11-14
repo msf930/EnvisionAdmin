@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Logo from "../../public/envisionLogoWide.png";
+import Logo from "../../public/envisionLogoTall.png";
 
 import styles from "./Footer.module.css";
 
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
           <div className={styles.footerContactCont}>
             <p>111-111-1111</p>
-            <p>email@gmail.com</p>
+            <p>kristina@envisionadminservices.com</p>
           </div>
         </div>
         <div className={styles.footerBottomCont}>

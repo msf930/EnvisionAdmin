@@ -4,10 +4,16 @@
 
 
 :root {
-    --bg-blue-color: #a9c3db;
+    --bg-blue-color: #BAD0EC;
     /* --bg-blue-color: #8DA9C4; */
     --bg-white-color: #ffffff;
     --bg-grey-color: #F3F3F3;
+
+    --primary-gold-color: #fab85f;
+
+    --secondary-light-color: #f5db3d;
+    --secondary-medium-color: #DEBD4C;
+    --secondary-dark-color: #999999;
 
     --font-blue-color: #0B2545;
     --font-white-color: #ffffff;
@@ -17,10 +23,15 @@
     --font-size-h2: 44px;
     --font-size-h3: 32px;
     --font-size-h4: 28px;
+    --font-size-blogTitle: 26px;
     --font-size-p: 18px;
+    --font-size-small: 14px;
+    --font-size-xSmall: 12px;
 
     --border-radius: 10px;
 
     --box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.2);
+
+    --nav-offset: 10px;
 }
 

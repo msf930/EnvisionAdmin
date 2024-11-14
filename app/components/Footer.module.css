@@ -1,9 +1,58 @@
+
+@media (max-width: 640px) {
 .footerCont{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.footerCont p{
+    font-family: var(--afacad_flux-font);
+}
+.footerTopCont{
+    background-color: var(--bg-grey-color);
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footerLogoCont{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.footerContactCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footerBottomCont{
+    background-color: #2a2a2a;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+}
+@media (min-width: 640px) {
+.footerCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footerCont p{
+    font-family: var(--afacad_flux-font);
 }
 .footerTopCont{
     background-color: var(--bg-grey-color);
@@ -17,8 +66,8 @@
 }
 .footerLogoCont{
     position: relative;
-    width: 150px;
-    height: 94px;
+    width: 300px;
+    height: 250px;
 }
 .footerContactCont{
     display: flex;
@@ -37,4 +86,49 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+}
+@media (min-width: 1000px) {
+.footerCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footerCont p{
+    font-family: var(--afacad_flux-font);
+}
+.footerTopCont{
+    background-color: var(--bg-grey-color);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footerLogoCont{
+    position: relative;
+    width: 300px;
+    height: 250px;
+}
+.footerContactCont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footerBottomCont{
+    background-color: #2a2a2a;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 }

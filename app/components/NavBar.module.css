@@ -8,6 +8,7 @@
     opacity: 100%;
     transition: background-color 0.6s ease;
     z-index: 100;
+    
   }
   .header2 {
     position: fixed;
@@ -48,6 +49,12 @@
   }
   .header2 .navicon4open span {
     background: white;
+  }
+  .header p{
+    font-family: var(--afacad_flux-font);
+  }
+  .header2 p{
+    font-family: var(--afacad_flux-font);
   }
   .navLogoCont {
     position: relative;
@@ -293,11 +300,13 @@
     color: white;
     transition: color 0.6s ease;
     font-size: 14px;
+    font-family: var(--afacad_flux-font);
   }
   .header2 p {
     color: white;
     transition: color 0.6s ease;
     font-size: 14px;
+    font-family: var(--afacad_flux-font);
   }
   .header a {
     color: white;
@@ -374,14 +383,16 @@
     z-index: 100;
   }
   .header p {
-    color: white;
+    color: black;
     transition: color 0.6s ease;
     font-size: 16px;
+    font-family: var(--afacad_flux-font);
   }
   .header2 p {
     color: white;
     transition: color 0.6s ease;
     font-size: 16px;
+    font-family: var(--afacad_flux-font);
   }
   .header a {
     color: white;

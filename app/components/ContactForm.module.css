@@ -1,13 +1,551 @@
+@media (max-width: 640px) {
+    .contactContWhite{
+        background-color: var(--bg-blue-white);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 50px;
+        height: auto;
+        width: 100vw;
+    }
+    .contactContBlue{
+        background-color: var(--bg-blue-color);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 50px;
+        height: auto;
+        width: 100vw;
+    }
+    .contactContBlue h3{
+        font-size: var(--font-size-h4);
+    }
+    .contactContWhite h3{
+        font-size: var(--font-size-h4);
+    }
+    .contactLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 20px 0;
+        width: 100%;
+        /* padding-left: 80px; */
+    }
+    .contactLeftCont{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        width: 90%;
+        height: 100%;
+        padding: 10px 20px;
+        background-color: var(--bg-blue-color);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        
+    }
+    /* .contactLeftCont::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 16px; 
+        background-color: var(--bg-white-color); 
+        border-radius: var(--border-radius); 
+        z-index: 2; 
+      } */
+    .contactLeft h3{
+        font-family: var(--cormorant-font);
+        font-size: var(--font-size-h4);
+        padding-bottom: 20px;
+        text-align: center;
+        z-index: 3;
+    }
+    .contactLeft p{
+        font-size: var(--font-size-small);
+        font-family: var(--afacad_flux-font);
+        max-width: 70%;
+        text-align: center;
+        z-index: 3;
+    }
+    .socialCont{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    .contactCenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding-bottom: 30px;
+       
+    }
+    .contactCenterCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding: 0px;
+        /* background-color: var(--bg-blue-color);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow); */
+    }
+    .inputGroupCont{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+    
+    }
+    .formCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding-top: 0px;
+    }
+    .inputItem{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+    }
+    .inputLabelCont{
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .inputItemLabel{
+        font-size: 14px;
+        color: var(--font-blue-color);
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputStandard{
+        width: 100%;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        background-color: var(--bg-white-color);
+        
+    }
+    .inputItemInputStandard::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputNonStandard{
+        width: 100%;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        background-color: var(--bg-blue-color);
+        
+    }
+    .inputItemInputNonStandard::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputStandard:focus,
+    .inputItemInputNonStandard:focus {
+        outline: none;
+    }
+    .inputItemInputStandard2{
+        width: 100%;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        background-color: var(--bg-white-color);
+        
+    }
+    .inputItemInputStandard2::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputNonStandard2{
+        width: 100%;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        background-color: var(--bg-blue-color);
+        
+    }
+    .inputItemInputNonStandard2::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputStandard2:focus,
+    .inputItemInputNonStandard2:focus {
+        outline: none;
+    }
+    .inputItemInputAreaStandard{
+        width: 100%;
+        height: 100px;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        resize: none;
+        
+    }
+    .inputItemInputAreaStandard::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputAreaNonStandard{
+        width: 100%;
+        height: 100px;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        resize: none;
+        background-color: var(--bg-blue-color);
+        
+    }
+    .inputItemInputAreaNonStandard::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputAreaStandard:focus,
+    .inputItemInputAreaNonStandard:focus {
+        outline: none;
+    }
+    .inputItemSpacer{
+        width: 30px;
+    }
+    .gotchaCont{
+        text-indent:-99999px; 
+        white-space:nowrap; 
+        overflow:hidden; 
+        position:absolute;
+    }
+    .btnCont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .submitBtn{
+        background-color: #13315C;
+        padding: 12px 28px;
+        color: var(--bg-white-color);
+        border-radius: var(--border-radius);
+        font-family: var(--cormorant-font);
+        transition: color 500ms;
+        font-size: var(--font-size-small);
+    }
+    .submitBtn:hover{
+        color: var(--primary-gold-color);
+    }
+    .contactRight{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:  50px 30px;
+        box-shadow: var(--box-shadow);
+    }
+    .contactRightImg{
+        border-radius: var(--border-radius);
+    
+    }
+}
+@media (min-width: 640px) {
+    .contactContWhite{
+        background-color: var(--bg-blue-white);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 50px;
+        height: auto;
+    }
+    .contactContBlue{
+        background-color: var(--bg-blue-color);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 50px;
+        height: auto;
+    }
+    .contactContBlue h3{
+        font-size: var(--font-size-h3);
+    }
+    .contactContWhite h3{
+        font-size: var(--font-size-h3);
+    }
+    .contactLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 30px 30px;
+        /* padding-left: 80px; */
+    }
+    .contactLeftCont{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        width: 80%;
+        height: 100%;
+        padding: 20px;
+        background-color: var(--bg-blue-color);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        
+    }
+    /* .contactLeftCont::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 16px; 
+        background-color: var(--bg-white-color); 
+        border-radius: var(--border-radius); 
+        z-index: 2; 
+      } */
+    .contactLeft h3{
+        font-family: var(--cormorant-font);
+        font-size: var(--font-size-h3);
+        padding-bottom: 20px;
+        text-align: center;
+        z-index: 3;
+    }
+    .contactLeft p{
+        font-size: var(--font-size-p);
+        font-family: var(--afacad_flux-font);
+        max-width: 70%;
+        text-align: center;
+        z-index: 3;
+    }
+    .socialCont{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    .contactCenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-right: 80px; */
+    }
+    .contactCenterCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        
+        padding: 20px;
+        /* background-color: var(--bg-blue-color);
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow); */
+    }
+    .inputGroupCont{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    
+    }
+    .formCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 0px;
+    }
+    .inputItem{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .inputLabelCont{
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .inputItemLabel{
+        font-size: 14px;
+        color: var(--font-blue-color);
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputStandard{
+        width: 200px;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        background-color: var(--bg-white-color);
+        
+    }
+    .inputItemInputStandard::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputNonStandard{
+        width: 200px;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        background-color: var(--bg-blue-color);
+        
+    }
+    .inputItemInputNonStandard::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputStandard:focus,
+    .inputItemInputNonStandard:focus {
+        outline: none;
+    }
+    .inputItemInputStandard2{
+        width: 420px;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        background-color: var(--bg-white-color);
+        
+    }
+    .inputItemInputStandard2::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputNonStandard2{
+        width: 420px;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        background-color: var(--bg-blue-color);
+        
+    }
+    .inputItemInputNonStandard2::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputStandard2:focus,
+    .inputItemInputNonStandard2:focus {
+        outline: none;
+    }
+    .inputItemInputAreaStandard{
+        width: 420px;
+        height: 100px;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        resize: none;
+        
+    }
+    .inputItemInputAreaStandard::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputAreaNonStandard{
+        width: 420px;
+        height: 100px;
+        padding: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--font-blue-color);
+        resize: none;
+        background-color: var(--bg-blue-color);
+        
+    }
+    .inputItemInputAreaNonStandard::placeholder {
+        color: #4c596d;
+        font-family: var(--afacad_flux-font);
+    }
+    .inputItemInputAreaStandard:focus,
+    .inputItemInputAreaNonStandard:focus {
+        outline: none;
+    }
+    .inputItemSpacer{
+        width: 30px;
+    }
+    .gotchaCont{
+        text-indent:-99999px; 
+        white-space:nowrap; 
+        overflow:hidden; 
+        position:absolute;
+    }
+    .btnCont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .submitBtn{
+        background-color: #13315C;
+        padding: 12px 28px;
+        color: var(--bg-white-color);
+        border-radius: var(--border-radius);
+        font-family: var(--cormorant-font);
+        transition: color 500ms;
+        font-size: var(--font-size-small);
+    }
+    .submitBtn:hover{
+        color: var(--primary-gold-color);
+    }
+    .contactRight{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:  50px 30px;
+        box-shadow: var(--box-shadow);
+    }
+    .contactRightImg{
+        border-radius: var(--border-radius);
+    
+    }
+}
+@media (min-width: 1000px) {
 .contactContWhite{
     background-color: var(--bg-blue-white);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 50px;
     height: 500px;
 }
 .contactContBlue{
     background-color: var(--bg-blue-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 50px;
     height: 500px;
 }
 .contactContBlue h3{
@@ -20,12 +558,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     gap: 16px;
     padding: 50px 30px;
     /* padding-left: 80px; */
 }
 .contactLeftCont{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,21 +578,58 @@
     box-shadow: var(--box-shadow);
     
 }
+/* .contactLeftCont::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 16px; 
+    background-color: var(--bg-white-color); 
+    border-radius: var(--border-radius); 
+    z-index: 2; 
+  } */
 .contactLeft h3{
+    font-family: var(--cormorant-font);
     font-size: var(--font-size-h3);
     padding-bottom: 20px;
     text-align: center;
+    z-index: 3;
 }
 .contactLeft p{
     font-size: var(--font-size-p);
+    font-family: var(--afacad_flux-font);
     max-width: 70%;
     text-align: center;
+    z-index: 3;
+}
+.socialCont{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
 }
 .contactCenter{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     /* padding-right: 80px; */
+}
+.contactCenterCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
+    padding: 20px;
+    /* background-color: var(--bg-blue-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow); */
 }
 .inputGroupCont{
     display: flex;
@@ -67,7 +643,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-top: 50px;
+    padding-top: 0px;
 }
 .inputItem{
     display: flex;
@@ -86,6 +662,7 @@
 .inputItemLabel{
     font-size: 14px;
     color: var(--font-blue-color);
+    font-family: var(--afacad_flux-font);
 }
 .inputItemInputStandard{
     width: 200px;
@@ -98,6 +675,7 @@
 }
 .inputItemInputStandard::placeholder {
     color: #4c596d;
+    font-family: var(--afacad_flux-font);
 }
 .inputItemInputNonStandard{
     width: 200px;
@@ -110,9 +688,40 @@
 }
 .inputItemInputNonStandard::placeholder {
     color: #4c596d;
+    font-family: var(--afacad_flux-font);
 }
 .inputItemInputStandard:focus,
 .inputItemInputNonStandard:focus {
+    outline: none;
+}
+.inputItemInputStandard2{
+    width: 420px;
+    padding: 6px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--font-blue-color);
+    background-color: var(--bg-white-color);
+    
+}
+.inputItemInputStandard2::placeholder {
+    color: #4c596d;
+    font-family: var(--afacad_flux-font);
+}
+.inputItemInputNonStandard2{
+    width: 420px;
+    padding: 6px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--font-blue-color);
+    background-color: var(--bg-blue-color);
+    
+}
+.inputItemInputNonStandard2::placeholder {
+    color: #4c596d;
+    font-family: var(--afacad_flux-font);
+}
+.inputItemInputStandard2:focus,
+.inputItemInputNonStandard2:focus {
     outline: none;
 }
 .inputItemInputAreaStandard{
@@ -127,6 +736,7 @@
 }
 .inputItemInputAreaStandard::placeholder {
     color: #4c596d;
+    font-family: var(--afacad_flux-font);
 }
 .inputItemInputAreaNonStandard{
     width: 420px;
@@ -141,6 +751,7 @@
 }
 .inputItemInputAreaNonStandard::placeholder {
     color: #4c596d;
+    font-family: var(--afacad_flux-font);
 }
 .inputItemInputAreaStandard:focus,
 .inputItemInputAreaNonStandard:focus {
@@ -165,6 +776,12 @@
     padding: 12px 28px;
     color: var(--bg-white-color);
     border-radius: var(--border-radius);
+    font-family: var(--cormorant-font);
+    transition: color 500ms;
+    font-size: var(--font-size-p);
+}
+.submitBtn:hover{
+    color: var(--primary-gold-color);
 }
 .contactRight{
     position: relative;
@@ -178,4 +795,5 @@
 .contactRightImg{
     border-radius: var(--border-radius);
 
+}
 }
