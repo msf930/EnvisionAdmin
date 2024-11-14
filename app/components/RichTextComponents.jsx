@@ -8,7 +8,7 @@ import styles from "./RichTextComponents.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-import Refractor from "react-refractor";
+// import Refractor from "react-refractor";
 import js from "refractor/lang/javascript";
 const { projectId } = client.config();
 const imageBuilder = urlBuilder({
@@ -46,7 +46,7 @@ export const RichTextComponents = {
             data-language='javascript'
             className='p-2 bg-gray-800 rounded-lg overflow-auto'
           >
-            <Refractor language='js' value={code} />
+            {/* <Refractor language='js' value={code} /> */}
           </pre>
         </div>
       );
