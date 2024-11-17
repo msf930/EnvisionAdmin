@@ -93,7 +93,7 @@ const NavBar = () => {
               </ul>
 
               <div
-                className="flex sm:hidden white w-[100px]"
+                className="flex sm:hidden white w-[80px]"
                 onClick={handleShowNavbar}
               >
                 <div className={navIcon}>

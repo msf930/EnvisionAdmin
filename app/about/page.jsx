@@ -11,6 +11,8 @@ import whoOne from "../../public/whoOne.png";
 import ScheduleButton from "../components/ScheduleButton";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import WhoWeAre from "../components/WhoWeAre";
+import DynamicImage from "../components/DynamicImage";
 
 export default function About() {
   return (
@@ -33,12 +35,9 @@ export default function About() {
             </div>
           </div>
           <div className={styles.heroImage}>
-            <Image
-              src={hero}
-              alt="placeholder"
-              unoptimized
-              objectFit="cover"
-              layout="fill"
+            <DynamicImage
+              url="https://utfs.io/f/6GG2Rpnzy0n2GJVUCaOTFSeOBTwnHLyzJcroMV7R3pNduAUk"
+              alt="office building"
             />
           </div>
         </div>
@@ -53,7 +52,7 @@ export default function About() {
               flow and eliminate back office administrative burden, so you can
               focus on what matters most.
             </p>
-            <ScheduleButton isCenter={true}/>
+            <ScheduleButton isCenter={true} />
           </div>
         </div>
       </div>
@@ -73,7 +72,7 @@ export default function About() {
         <div className={styles.streamlineImgCont}>
           <Image
             src={aboutOne}
-            alt="placeholder"
+            alt="Achieving Work-Life Balance"
             unoptimized
             objectFit="cover"
             layout="fill"
@@ -101,7 +100,7 @@ export default function About() {
         <div className={styles.streamlineImgCont}>
           <Image
             src={aboutTwo}
-            alt="placeholder"
+            alt="Streamlined Operations, Optimized Cash Flow"
             unoptimized
             objectFit="cover"
             layout="fill"
@@ -138,7 +137,7 @@ export default function About() {
         <div className={styles.streamlineImgCont}>
           <Image
             src={aboutThree}
-            alt="placeholder"
+            alt="Your Success Is Our Priority"
             unoptimized
             objectFit="cover"
             layout="fill"
@@ -148,7 +147,7 @@ export default function About() {
         </div>
       </div>
       {/* Success */}
-      
+
       {/* Discover */}
       <div className={styles.discoverCont}>
         <div className={styles.discoverItemCont}>
@@ -164,25 +163,7 @@ export default function About() {
         </div>
       </div>
       {/* Who */}
-      <div className={styles.whoCont}>
-        <h2>Who We Are</h2>
-        <div className={styles.whoInfoCont}>
-          
-          <div className={styles.whoInfoTextCont}>
-            <h3>Kristina Kefalas</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
-              velit sed nisl ullamcorper lobortis. Nulla arcu sem, tempor eu
-              ornare non, scelerisque eget turpis. Nulla vitae pulvinar orci.
-              Etiam lorem odio, aliquet id purus quis, dictum blandit nisi. Nunc
-              odio dolor, scelerisque et scelerisque a, aliquet et ante. Nullam
-              consectetur ipsum non tempor venenatis. Nulla ut ex massa.
-              Praesent venenatis bibendum erat vel blandit. Mauris interdum ante
-              lacus, vitae luctus nunc pellentesque quis.
-            </p>
-          </div>
-        </div>
-      </div>
+      <WhoWeAre />
       {/* Contact */}
       <div>
         <ContactForm isStandard={true} />

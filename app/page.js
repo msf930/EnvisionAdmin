@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 
 import heroImage from "../public/homeHero.png";
-import heroLogoImage from "../public/logoHero.png";
 import homeAchieve from "../public/homeAchieve.png";
 import streamline from "../public/streamlineGold.png";
 import growth from "../public/growthGold.png";
@@ -14,6 +13,7 @@ import ScheduleButton from "./components/ScheduleButton";
 import Carousel from "./components/Carousel";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
+import DynamicImage from "./components/DynamicImage";
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
                   <div className={styles.heroItemImg}>
                     <Image
                       src={streamline}
-                      alt="placeholder"
+                      alt="Gears"
                       priority
                       unoptimized
                       objectFit="cover"
@@ -48,7 +48,7 @@ export default function Home() {
                   <div className={styles.heroItemImg}>
                     <Image
                       src={growth}
-                      alt="placeholder"
+                      alt="upward trending graph"
                       priority
                       unoptimized
                       objectFit="cover"
@@ -62,7 +62,7 @@ export default function Home() {
                   <div className={styles.heroItemImg}>
                     <Image
                       src={cashFlow}
-                      alt="placeholder"
+                      alt="money sign with arrows around it"
                       priority
                       unoptimized
                       objectFit="cover"
@@ -77,15 +77,20 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.heroImage}>
-            <Image
-              src={heroImage}
-              alt="placeholder"
-              unoptimized
-              priority
-              objectFit="cover"
-              layout="fill"
-              placeholder="blur"
+            <DynamicImage
+              url="https://utfs.io/f/6GG2Rpnzy0n2AwHHK3ITiHFGpNSCkMcWuolefEXY5I310B27"
+              alt="eagle flying over forest"
             />
+            {/*<Image*/}
+            {/*  src="https://utfs.io/f/6GG2Rpnzy0n2AwHHK3ITiHFGpNSCkMcWuolefEXY5I310B27"*/}
+            {/*  alt="eagle flying over forest"*/}
+            {/*  unoptimized*/}
+            {/*  priority*/}
+            {/*  objectFit="cover"*/}
+            {/*  layout="fill"*/}
+            {/*  placeholder="blur"*/}
+            {/*  blurDataURL="https://utfs.io/f/6GG2Rpnzy0n2WUALnQuwZamltzk9JiPW1XTeGINyFxoBfhA0"*/}
+            {/*/>*/}
           </div>
         </div>
       </div>
@@ -132,7 +137,7 @@ export default function Home() {
                 support eliminates the need for part-time hires while ensuring
                 your sensitive information is managed securely and efficiently.
                 From paying bills to managing collections, we optimize every
-                aspect of your operations. {" "}
+                aspect of your operations.{" "}
                 <b className={styles.multiPBold}>
                   Plus we&apos;ve helped businesses reduce administration time
                   by up to 40% and improve cash flow by 25% on average.
@@ -274,7 +279,7 @@ export default function Home() {
               <div className={styles.reapListItemImg}>
                 <Image
                   src={reapCheck}
-                  alt="placeholder"
+                  alt="check mark"
                   unoptimized
                   objectFit="cover"
                   loading="lazy"
@@ -293,7 +298,7 @@ export default function Home() {
               <div className={styles.reapListItemImg}>
                 <Image
                   src={reapCheck}
-                  alt="placeholder"
+                  alt="check mark"
                   unoptimized
                   objectFit="cover"
                   loading="lazy"
@@ -301,7 +306,7 @@ export default function Home() {
               </div>
               <div className={styles.reapListItemText}>
                 <p>
-                  Ensure  that your back office tasks are managed securely and
+                  Ensure that your back office tasks are managed securely and
                   accurately
                 </p>
               </div>
@@ -315,7 +320,7 @@ export default function Home() {
               <div className={styles.reapListItemImg}>
                 <Image
                   src={reapCheck}
-                  alt="placeholder"
+                  alt="check mark"
                   unoptimized
                   objectFit="cover"
                   loading="lazy"
@@ -334,7 +339,7 @@ export default function Home() {
               <div className={styles.reapListItemImg}>
                 <Image
                   src={reapCheck}
-                  alt="placeholder"
+                  alt="check mark"
                   unoptimized
                   objectFit="cover"
                   loading="lazy"
@@ -356,7 +361,7 @@ export default function Home() {
               <div className={styles.reapListItemImg}>
                 <Image
                   src={reapCheck}
-                  alt="placeholder"
+                  alt="check mark"
                   unoptimized
                   objectFit="cover"
                   loading="lazy"

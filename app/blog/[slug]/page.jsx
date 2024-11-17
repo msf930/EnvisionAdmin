@@ -47,7 +47,7 @@ export default async function PostPage({ params }) {
               {post.mainImage && (
                 <Image
                   src={urlFor(post.mainImage).url()}
-                  alt="placeholder"
+                  alt={post.title}
                   unoptimized
                   objectFit="cover"
                   layout="fill"

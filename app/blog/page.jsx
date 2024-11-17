@@ -99,6 +99,25 @@ export default function Blog() {
             </div>
           </div>
         </div>
+        <div className={styles.heroMed}>
+          <div className={styles.heroCont}>
+            <div className={styles.heroBlogCont}>
+              <div className={styles.loadingSpinner}></div>
+            </div>
+            <div className={styles.heroImage}>
+              {/* <Image
+                src={heroImage}
+                alt="placeholder"
+                unoptimized
+                objectFit="cover"
+                layout="fill"
+                placeholder="blur"
+                priority
+              /> */}
+              <div className={styles.heroFill}></div>
+            </div>
+          </div>
+        </div>
         <div className={styles.blogItemsCont}>
           <div className={styles.postSpinnerCont}>
             <div className={styles.loadingSpinner}></div>
@@ -137,21 +156,31 @@ export default function Blog() {
         <div className={styles.heroCont}>
           <div className={styles.heroBlogCont}>
             <div className={styles.heroText}>
-              <h3>Latest Post</h3>
-              <p>{new Date(heroPostSolo?.publishedAt).toLocaleDateString()}</p>
+              <h3>{heroPostSolo?.title ? "Latest Post" : ""}</h3>
+              <p>
+                {heroPostSolo?.publishedAt ? (
+                  new Date(heroPostSolo?.publishedAt).toLocaleDateString()
+                ) : (
+                  <></>
+                )}
+              </p>
               <h1>{heroPostSolo?.title ? heroPostSolo?.title : ""}</h1>
               <p className={styles.heroTextTextCont}>
                 {heroPostSolo?.description ? heroPostSolo?.description : ""}
               </p>
-              <Link href={`/blog/${heroPostSolo?.slug.current}`}>
-                <button className={styles.heroPostBtn}>View post</button>
-              </Link>
+              {heroPostSolo?.title ? (
+                <Link href={`/blog/${heroPostSolo?.slug.current}`}>
+                  <button className={styles.heroPostBtn}>View post</button>
+                </Link>
+              ) : (
+                <></>
+              )}
             </div>
             <div className={styles.heroImgCont}>
               {heroPostSolo?.mainImage ? (
                 <Image
                   src={urlFor(heroPostSolo?.mainImage).url()}
-                  alt="placeholder"
+                  alt={heroPostSolo?.title}
                   unoptimized
                   priority
                   //objectFit="cover"
@@ -161,7 +190,7 @@ export default function Blog() {
                   className={styles.heroBlogImg}
                 />
               ) : (
-                <div className={styles.heroImageFill}></div>
+                <div></div>
               )}
             </div>
           </div>
@@ -169,7 +198,7 @@ export default function Blog() {
             {heroPostSolo?.mainImage ? (
               <Image
                 src={urlFor(heroPostSolo?.mainImage).url()}
-                alt="placeholder"
+                alt={heroPostSolo?.title}
                 unoptimized
                 objectFit="cover"
                 layout="fill"
@@ -190,9 +219,11 @@ export default function Blog() {
             <div className={styles.heroText}>
               <div className={styles.heroPostMedTopCont}>
                 <div className={styles.heroPostMedTop}>
-                  <h3>Latest Post</h3>
+                  <h3>{heroPostSolo?.title ? "Latest Post" : ""}</h3>
                   <p>
-                    {heroPostSolo?.publishedAt ? new Date(heroPostSolo?.publishedAt).toLocaleDateString() : ""}
+                    {heroPostSolo?.publishedAt
+                      ? new Date(heroPostSolo?.publishedAt).toLocaleDateString()
+                      : ""}
                   </p>
                 </div>
                 <h1>{heroPostSolo?.title ? heroPostSolo?.title : ""}</h1>
@@ -203,7 +234,7 @@ export default function Blog() {
                     {heroPostSolo?.mainImage ? (
                       <Image
                         src={urlFor(heroPostSolo?.mainImage).url()}
-                        alt="placeholder"
+                        alt={heroPostSolo?.title}
                         unoptimized
                         priority
                         //objectFit="cover"
@@ -213,7 +244,7 @@ export default function Blog() {
                         className={styles.heroBlogImg}
                       />
                     ) : (
-                      <div className={styles.heroImageFill}></div>
+                      <div></div>
                     )}
                   </div>
                 </div>
@@ -221,16 +252,20 @@ export default function Blog() {
               <p className={styles.heroTextTextCont}>
                 {heroPostSolo?.description ? heroPostSolo?.description : ""}
               </p>
-              <Link href={`/blog/${heroPostSolo?.slug.current}`}>
-                <button className={styles.heroPostBtn}>View post</button>
-              </Link>
+              {heroPostSolo?.title ? (
+                <Link href={`/blog/${heroPostSolo?.slug.current}`}>
+                  <button className={styles.heroPostBtn}>View post</button>
+                </Link>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
           <div className={styles.heroImage}>
             {heroPostSolo?.mainImage ? (
               <Image
                 src={urlFor(heroPostSolo?.mainImage).url()}
-                alt="placeholder"
+                alt={heroPostSolo?.title}
                 unoptimized
                 objectFit="cover"
                 layout="fill"
@@ -253,7 +288,7 @@ export default function Blog() {
                 {post.mainImage ? (
                   <Image
                     src={urlFor(post.mainImage).url()}
-                    alt="placeholder"
+                    alt={post.title}
                     unoptimized
                     objectFit="cover"
                     //   layout="fill"

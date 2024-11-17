@@ -51,6 +51,7 @@
 }
 .slideText{
     width: 70%;
+    font-size: var(--font-size-small);
 }
 .slideName{
     width: 70%;

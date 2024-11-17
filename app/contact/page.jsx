@@ -87,10 +87,11 @@ export default function Contact() {
           <div className={styles.heroImage}>
             <Image
               src={hero}
-              alt="placeholder"
+              alt="eagle flying over forest"
               unoptimized
               objectFit="cover"
               layout="fill"
+              placeholder="blur"
             />
           </div>
         </div>

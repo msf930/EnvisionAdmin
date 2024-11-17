@@ -10,20 +10,25 @@
   },
   "dependencies": {
     "@next/font": "^14.2.15",
+    "@plaiceholder/next": "^3.0.0",
     "@portabletext/react": "^3.1.0",
     "@sanity/client": "^6.22.4",
     "@sanity/icons": "^3.4.0",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.63.0",
+    "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "next": "15.0.2",
     "next-sanity": "^9.8.10",
+    "plaiceholder": "^3.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-refractor": "^3.1.1",
     "sanity": "^3.63.0",
+    "sharp": "^0.33.5",
     "styled-components": "^6.1.13",
-    "swiper": "^11.1.14"
+    "swiper": "^11.1.14",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "eslint": "^8",

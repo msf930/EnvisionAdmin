@@ -54,7 +54,7 @@ export default function Carousel() {
           return (
             <SwiperSlide key={index}>
               <div className={styles.slideCont}>
-                <div className={styles.slideText} data-swiper-parallax="-500">
+                <div className={styles.slideText} data-swiper-parallax="0">
                   {item.testimonial}
                 </div>
                 <div className={styles.slideName}>{item.author}</div>

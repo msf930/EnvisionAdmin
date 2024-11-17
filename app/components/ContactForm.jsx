@@ -13,6 +13,7 @@ import homeAchieve from "../../public/homeAchieve.png";
 const ContactForm = ({ isStandard }) => {
   const [submitted, setSubmitted] = useState(false);
   const [social, setSocial] = useState([]);
+  const [info, setInfo] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,22 +42,36 @@ const ContactForm = ({ isStandard }) => {
       });
   };
 
+  // const SOCIAL_QUERY = `*[
+  //   _type == "socials"
+  // ]{_id, isActive,  socialIcon, url}`;
+
   const SOCIAL_QUERY = `*[
-    _type == "socials"
-  ]{_id, isActive,  socialIcon, url}`;
+    _type in ["socials", "info"]]{
+    _type,
+    _id,
+    _type == "socials" => {_id, isActive,  socialIcon, url},
+    _type == "info" => {Phone_number, Email}
+    }`;
 
   useEffect(() => {
     const fetchSocial = async () => {
-      //setSocialLoading(true);
-      const fetchedPost = await client.fetch(SOCIAL_QUERY);
-      setSocial(fetchedPost);
-
-      //setSocialLoading(false);
+      try {
+        const fetchedPost = await client.fetch(SOCIAL_QUERY);
+        const socialFilter = fetchedPost.filter((item) => item._type === "socials");
+        const infoFilter = fetchedPost.filter((item) => item._type === "info");
+        const infoArrOne = infoFilter[0];
+        setSocial(socialFilter);
+        setInfo(infoArrOne);
+      } catch (error) {
+        console.error("Error fetching social and info data:", error);
+      }
+      
     };
 
     fetchSocial();
   }, [SOCIAL_QUERY]);
-
+ 
   if (submitted) {
     return (
       <div
@@ -84,8 +99,8 @@ const ContactForm = ({ isStandard }) => {
             Have questions or feedback? We&apos;re here to help. Send us a
             message.
           </p>
-          <p>Phone: 111-111-1111 </p>
-          <p>Email: kristina@envisionadminservices.com</p>
+          <p>Phone: {info.Phone_number} </p>
+          <p>Email: {info.Email}</p>
           <div className={styles.socialCont}>
             {social.map((item) => {
               return (

@@ -8,6 +8,7 @@ import reapCheck from "../../public/reapCheckGold.png";
 import ScheduleButton from "../components/ScheduleButton";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import DynamicImage from "../components/DynamicImage";
 
 export default function Services() {
   return (
@@ -40,10 +41,9 @@ export default function Services() {
                   <div className={styles.reapListItemImg}>
                     <Image
                       src={reapCheck}
-                      alt="placeholder"
+                      alt="checkmark"
                       unoptimized
                       objectFit="cover"
-                      placeholder="blur"
                     />
                   </div>
                   <div className={styles.reapListItemText}>
@@ -63,10 +63,9 @@ export default function Services() {
                   <div className={styles.reapListItemImg}>
                     <Image
                       src={reapCheck}
-                      alt="placeholder"
+                      alt="checkmark"
                       unoptimized
                       objectFit="cover"
-                      placeholder="blur"
                     />
                   </div>
                   <div className={styles.reapListItemText}>
@@ -86,10 +85,9 @@ export default function Services() {
                   <div className={styles.reapListItemImg}>
                     <Image
                       src={reapCheck}
-                      alt="placeholder"
+                      alt="checkmark"
                       unoptimized
                       objectFit="cover"
-                      placeholder="blur"
                     />
                   </div>
                   <div className={styles.reapListItemText}>
@@ -109,10 +107,9 @@ export default function Services() {
                   <div className={styles.reapListItemImg}>
                     <Image
                       src={reapCheck}
-                      alt="placeholder"
+                      alt="checkmark"
                       unoptimized
                       objectFit="cover"
-                      placeholder="blur"
                     />
                   </div>
                   <div className={styles.reapListItemText}>
@@ -124,13 +121,18 @@ export default function Services() {
             </div>
           </div>
           <div className={styles.heroImage}>
-            <Image
-              src={hero}
-              alt="placeholder"
-              unoptimized
-              objectFit="cover"
-              layout="fill"
+            <DynamicImage
+              url="https://utfs.io/f/6GG2Rpnzy0n2eZjYgEQsymcDMEanYbxJjovd2gAWFVieH0ZB"
+              alt="laptop"
             />
+            {/*<Image*/}
+            {/*  src="https://utfs.io/f/6GG2Rpnzy0n2eZjYgEQsymcDMEanYbxJjovd2gAWFVieH0ZB"*/}
+            {/*  alt="laptop"*/}
+            {/*  unoptimized*/}
+            {/*  objectFit="cover"*/}
+            {/*  layout="fill"*/}
+            {/*  // placeholder="blur"*/}
+            {/*/>*/}
           </div>
         </div>
       </div>
@@ -187,8 +189,11 @@ export default function Services() {
             projects from planning through completion. Our team ensures
             deadlines are met and resources are used effectively, giving you
             peace of mind and proven results.
-            <br /> <br /> <b>Schedule a free consultation to discover how we can
-            transform your operations and optimize your cash flow.</b>
+            <br /> <br />{" "}
+            <b>
+              Schedule a free consultation to discover how we can transform your
+              operations and optimize your cash flow.
+            </b>
           </p>
           <div className={styles.btnCont}>
             <ScheduleButton isCenter={true} />
