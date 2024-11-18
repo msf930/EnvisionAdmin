@@ -68,8 +68,10 @@
     }
 
     .heroImage {
+        position: relative;
         filter: brightness(100%);
         height: 800px;
+        width: 100%;
     }
 
     /* Section one and two */
@@ -477,6 +479,7 @@
     }
 
     .heroImage {
+        position: relative;
         filter: brightness(100%);
         height: 800px;
     }
@@ -880,6 +883,7 @@
     }
 
     .heroImage {
+        position: relative;
         filter: brightness(100%);
         height: 800px;
     }

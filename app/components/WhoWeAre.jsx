@@ -23,6 +23,7 @@ export default function WhoWeAre() {
 
     fetchInfo();
   }, [INFO_DATA_QUERY]);
+  // console.log(info);
 
   return (
     <div className={styles.whoCont}>

@@ -7,14 +7,15 @@ export default async function DynamicImage({ url, alt, containerClass }) {
   const { base64, img } = await getImage(url);
 
   return (
-    <div className={cn("relative", containerClass)}>
-      <Image
-        {...img}
-        alt={alt || ""}
-        unoptimized={true}
-        placeholder="blur"
-        blurDataURL={base64}
-      />
-    </div>
+    <Image
+      src={img}
+      alt={alt || ""}
+      unoptimized={true}
+      placeholder="blur"
+      blurDataURL={base64}
+      objectFit="cover"
+      quality={80}
+      layout="fill"
+    />
   );
 }

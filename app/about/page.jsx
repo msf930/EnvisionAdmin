@@ -1,18 +1,11 @@
-import Image from "next/image";
-
 import styles from "./styles.module.css";
-
-import hero from "../../public/aboutHero.png";
-import aboutOne from "../../public/homeAchieve.png";
-import aboutTwo from "../../public/about2.png";
-import aboutThree from "../../public/about3.png";
-import whoOne from "../../public/whoOne.png";
 
 import ScheduleButton from "../components/ScheduleButton";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import WhoWeAre from "../components/WhoWeAre";
 import DynamicImage from "../components/DynamicImage";
+import AboutImageItem from "../components/AboutImageItem";
 
 export default function About() {
   return (
@@ -70,15 +63,7 @@ export default function About() {
           </p>
         </div>
         <div className={styles.streamlineImgCont}>
-          <Image
-            src={aboutOne}
-            alt="Achieving Work-Life Balance"
-            unoptimized
-            objectFit="cover"
-            layout="fill"
-            placeholder="blur"
-            className={styles.streamlineImg}
-          />
+          <AboutImageItem imageNumber={"About_image_one"} />
         </div>
       </div>
       <div className={styles.lineCont}>
@@ -98,15 +83,7 @@ export default function About() {
           </p>
         </div>
         <div className={styles.streamlineImgCont}>
-          <Image
-            src={aboutTwo}
-            alt="Streamlined Operations, Optimized Cash Flow"
-            unoptimized
-            objectFit="cover"
-            layout="fill"
-            placeholder="blur"
-            className={styles.streamlineImg}
-          />
+          <AboutImageItem imageNumber={"About_image_two"} />
         </div>
       </div>
       <div className={styles.lineCont}>
@@ -135,15 +112,7 @@ export default function About() {
           </div>
         </div>
         <div className={styles.streamlineImgCont}>
-          <Image
-            src={aboutThree}
-            alt="Your Success Is Our Priority"
-            unoptimized
-            objectFit="cover"
-            layout="fill"
-            placeholder="blur"
-            className={styles.streamlineImg}
-          />
+          <AboutImageItem imageNumber={"About_image_three"} />
         </div>
       </div>
       {/* Success */}
