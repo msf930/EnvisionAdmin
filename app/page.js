@@ -53,7 +53,7 @@ export default function Home() {
                       unoptimized
                       objectFit="cover"
                       layout="fill"
-                      placeholder="blur"
+                      //placeholder="blur"
                     />
                   </div>
                   <p>Focus on Growth</p>
@@ -96,6 +96,7 @@ export default function Home() {
               priority
               objectFit="cover"
               layout="fill"
+              placeholder="blur"
             />
           </div>
         </div>
