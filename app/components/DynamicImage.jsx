@@ -14,7 +14,6 @@ export default async function DynamicImage({ url, alt, containerClass }) {
         unoptimized={true}
         placeholder="blur"
         blurDataURL={base64}
-        sizes="(max-width: 100vw) 1000px"
       />
     </div>
   );
