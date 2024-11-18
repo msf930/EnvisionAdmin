@@ -122,7 +122,7 @@ export default function Services() {
           </div>
           <div className={styles.heroImage}>
             <DynamicImage
-              url="https://utfs.io/f/6GG2Rpnzy0n2qV8Ahh6jaZKDkH9eo3FyqBPgrOXbw6uIsV8Y"
+              url="https://utfs.io/f/6GG2Rpnzy0n2VB5m3DPAZ9bKljEDL3MQt7vVwRYiWN6zGHph"
               alt="laptop"
             />
             {/*<Image*/}

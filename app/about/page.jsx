@@ -35,7 +35,7 @@ export default function About() {
             {/*  alt="office building"*/}
             {/*/>*/}
             <Image
-              src="https://utfs.io/f/6GG2Rpnzy0n2POKafn9Q5XENfhJkiSFbV3qOpmtTInDevscy"
+              src="https://utfs.io/f/6GG2Rpnzy0n2Tw7Sr0za2Pv9eXrsnKmURBcdLFtoxkhISZD3"
               alt="office building"
               unoptimized
               priority

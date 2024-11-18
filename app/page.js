@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./styles.module.css";
 
-import heroImage from "../public/homeHeroMed.png";
+import heroImage from "../public/homeHeroSmall.png.png";
 import homeAchieve from "../public/homeAchieve.png";
 import streamline from "../public/streamlineGold.png";
 import growth from "../public/growthGold.png";
