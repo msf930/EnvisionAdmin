@@ -1,5 +1,7 @@
 import styles from "./styles.module.css";
 
+import Image from "next/image";
+
 import ScheduleButton from "../components/ScheduleButton";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
@@ -28,9 +30,17 @@ export default function About() {
             </div>
           </div>
           <div className={styles.heroImage}>
-            <DynamicImage
-              url="https://utfs.io/f/6GG2Rpnzy0n2GJVUCaOTFSeOBTwnHLyzJcroMV7R3pNduAUk"
+            {/*<DynamicImage*/}
+            {/*  url="https://utfs.io/f/6GG2Rpnzy0n2GJVUCaOTFSeOBTwnHLyzJcroMV7R3pNduAUk"*/}
+            {/*  alt="office building"*/}
+            {/*/>*/}
+            <Image
+              src="https://utfs.io/f/6GG2Rpnzy0n2GJVUCaOTFSeOBTwnHLyzJcroMV7R3pNduAUk"
               alt="office building"
+              unoptimized
+              priority
+              objectFit="cover"
+              layout="fill"
             />
           </div>
         </div>

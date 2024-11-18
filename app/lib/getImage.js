@@ -8,7 +8,7 @@ export async function getImage(src) {
   const {
     metadata: { height, width },
     ...plaiceholder
-  } = await getPlaiceholder(buffer, { size: 10 });
+  } = await getPlaiceholder(buffer, { size: 4 });
 
   return {
     ...plaiceholder,

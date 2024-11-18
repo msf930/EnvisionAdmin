@@ -53,7 +53,7 @@ export default function Home() {
                       unoptimized
                       objectFit="cover"
                       layout="fill"
-                      // placeholder="blur"
+                      placeholder="blur"
                     />
                   </div>
                   <p>Focus on Growth</p>
@@ -77,10 +77,10 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.heroImage}>
-            <DynamicImage
-              url="https://utfs.io/f/6GG2Rpnzy0n2AwHHK3ITiHFGpNSCkMcWuolefEXY5I310B27"
-              alt="eagle flying over forest"
-            />
+            {/*<DynamicImage*/}
+            {/*  url="https://utfs.io/f/6GG2Rpnzy0n2AwHHK3ITiHFGpNSCkMcWuolefEXY5I310B27"*/}
+            {/*  alt="eagle flying over forest"*/}
+            {/*/>*/}
             {/*<Image*/}
             {/*  src="https://utfs.io/f/6GG2Rpnzy0n2AwHHK3ITiHFGpNSCkMcWuolefEXY5I310B27"*/}
             {/*  alt="eagle flying over forest"*/}
@@ -88,9 +88,15 @@ export default function Home() {
             {/*  priority*/}
             {/*  objectFit="cover"*/}
             {/*  layout="fill"*/}
-            {/*  placeholder="blur"*/}
-            {/*  blurDataURL="https://utfs.io/f/6GG2Rpnzy0n2WUALnQuwZamltzk9JiPW1XTeGINyFxoBfhA0"*/}
             {/*/>*/}
+            <Image
+              src={heroImage}
+              alt="eagle flying over forest"
+              unoptimized
+              priority
+              objectFit="cover"
+              layout="fill"
+            />
           </div>
         </div>
       </div>
