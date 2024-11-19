@@ -85,17 +85,9 @@ export default function Contact() {
           </div>
           <div className={styles.heroImage}>
             <DynamicImage
-              url="https://utfs.io/f/6GG2Rpnzy0n2AwHHK3ITiHFGpNSCkMcWuolefEXY5I310B27"
+              url="https://utfs.io/f/6GG2Rpnzy0n2YbPlFUtlzg8APGB2WTO7dYIQkuVNsmqioeDC"
               alt="eagle flying over forest"
             />
-            {/*<Image*/}
-            {/*  src={hero}*/}
-            {/*  alt="eagle flying over forest"*/}
-            {/*  unoptimized*/}
-            {/*  objectFit="cover"*/}
-            {/*  layout="fill"*/}
-            {/*  placeholder="blur"*/}
-            {/*/>*/}
           </div>
         </div>
       </div>

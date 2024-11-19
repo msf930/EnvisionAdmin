@@ -30,17 +30,9 @@ export default function About() {
             </div>
           </div>
           <div className={styles.heroImage}>
-            {/*<DynamicImage*/}
-            {/*  url="https://utfs.io/f/6GG2Rpnzy0n2GJVUCaOTFSeOBTwnHLyzJcroMV7R3pNduAUk"*/}
-            {/*  alt="office building"*/}
-            {/*/>*/}
-            <Image
-              src="https://utfs.io/f/6GG2Rpnzy0n2Tw7Sr0za2Pv9eXrsnKmURBcdLFtoxkhISZD3"
+            <DynamicImage
+              url="https://utfs.io/f/6GG2Rpnzy0n2Tw7Sr0za2Pv9eXrsnKmURBcdLFtoxkhISZD3"
               alt="office building"
-              unoptimized
-              priority
-              objectFit="cover"
-              layout="fill"
             />
           </div>
         </div>

@@ -77,26 +77,9 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.heroImage}>
-            {/*<DynamicImage*/}
-            {/*  url="https://utfs.io/f/6GG2Rpnzy0n2AwHHK3ITiHFGpNSCkMcWuolefEXY5I310B27"*/}
-            {/*  alt="eagle flying over forest"*/}
-            {/*/>*/}
-            {/*<Image*/}
-            {/*  src="https://utfs.io/f/6GG2Rpnzy0n2AwHHK3ITiHFGpNSCkMcWuolefEXY5I310B27"*/}
-            {/*  alt="eagle flying over forest"*/}
-            {/*  unoptimized*/}
-            {/*  priority*/}
-            {/*  objectFit="cover"*/}
-            {/*  layout="fill"*/}
-            {/*/>*/}
-            <Image
-              src={heroImage}
+            <DynamicImage
+              url="https://utfs.io/f/6GG2Rpnzy0n2YbPlFUtlzg8APGB2WTO7dYIQkuVNsmqioeDC"
               alt="eagle flying over forest"
-              unoptimized
-              priority
-              objectFit="cover"
-              layout="fill"
-              placeholder="blur"
             />
           </div>
         </div>

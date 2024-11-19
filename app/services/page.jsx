@@ -125,14 +125,6 @@ export default function Services() {
               url="https://utfs.io/f/6GG2Rpnzy0n2VB5m3DPAZ9bKljEDL3MQt7vVwRYiWN6zGHph"
               alt="laptop"
             />
-            {/*<Image*/}
-            {/*  src="https://utfs.io/f/6GG2Rpnzy0n2eZjYgEQsymcDMEanYbxJjovd2gAWFVieH0ZB"*/}
-            {/*  alt="laptop"*/}
-            {/*  unoptimized*/}
-            {/*  objectFit="cover"*/}
-            {/*  layout="fill"*/}
-            {/*  // placeholder="blur"*/}
-            {/*/>*/}
           </div>
         </div>
       </div>
