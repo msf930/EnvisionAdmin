@@ -1,7 +1,7 @@
 @media (max-width: 640px) {
     .whoCont {
         height: auto;
-        background-color: var(--bg-grey-color);
+        background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -76,7 +76,7 @@
 @media (min-width: 640px) {
     .whoCont {
         height: auto;
-        background-color: var(--bg-grey-color);
+        background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -151,7 +151,7 @@
 @media (min-width: 1000px) {
     .whoCont {
         height: auto;
-        background-color: var(--bg-grey-color);
+        background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;

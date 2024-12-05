@@ -37,3 +37,23 @@
     --nav-offset: 10px;
 }
 
+h1 {
+    font-size: var(--font-size-h1);
+    color: var(--font-blue-color);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    color: var(--font-blue-color);
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    color: var(--font-blue-color);
+    margin: 0;
+    padding: 0;
+}

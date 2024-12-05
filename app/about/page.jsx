@@ -51,6 +51,8 @@ export default function About() {
           </div>
         </div>
       </div>
+      {/* Who */}
+      <WhoWeAre />
       {/* Streamlined */}
       <div className={styles.streamlineCont}>
         <div className={styles.streamlineItemCont}>
@@ -133,8 +135,7 @@ export default function About() {
           <ScheduleButton isCenter={true} />
         </div>
       </div>
-      {/* Who */}
-      <WhoWeAre />
+
       {/* Contact */}
       <div>
         <ContactForm isStandard={true} />

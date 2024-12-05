@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import styles from "./styles.module.css";
 
+import heroLogo from "../public/envisionLogoTall.png";
 import heroImage from "../public/homeHeroSmall.png";
 import homeAchieve from "../public/homeAchieve.png";
 import streamline from "../public/streamlineGold.png";
@@ -21,6 +22,25 @@ export default function Home() {
       {/* Hero */}
       <div className={styles.hero}>
         <div className={styles.heroCont}>
+          <div className={styles.heroImage}>
+            <DynamicImage
+              url="https://utfs.io/f/6GG2Rpnzy0n2YbPlFUtlzg8APGB2WTO7dYIQkuVNsmqioeDC"
+              alt="eagle flying over forest"
+            />
+          </div>
+          <div className={styles.heroLogoCont}>
+            <div className={styles.heroLogoContCont}>
+              <Image
+                src={heroLogo}
+                alt="Envision admin logo"
+                priority
+                unoptimized
+                objectFit="contain"
+                layout="fill"
+                objectPosition="center"
+              />
+            </div>
+          </div>
           <div className={styles.heroTextCont}>
             <div className={styles.heroTextLeft}>
               <h1>Master Your Business, Not Your Paperwork</h1>
@@ -76,16 +96,65 @@ export default function Home() {
               <ScheduleButton isCenter={true} />
             </div>
           </div>
-          <div className={styles.heroImage}>
-            <DynamicImage
-              url="https://utfs.io/f/6GG2Rpnzy0n2YbPlFUtlzg8APGB2WTO7dYIQkuVNsmqioeDC"
-              alt="eagle flying over forest"
-            />
-          </div>
         </div>
       </div>
       {/* Multi */}
       <div className={styles.multiCont}>
+        <div className={styles.heroTextContMobile}>
+          <div className={styles.heroTextLeft}>
+            <h1>Master Your Business, Not Your Paperwork</h1>
+            <h3>
+              Expert operational and accounting support to optimize your cash
+              flow and eliminate back office administrative burden, so you can
+              focus on what matters most.
+            </h3>
+            <div className={styles.heroItemCont}>
+              <div className={styles.heroItem}>
+                <div className={styles.heroItemImg}>
+                  <Image
+                    src={streamline}
+                    alt="Gears"
+                    priority
+                    unoptimized
+                    objectFit="cover"
+                    layout="fill"
+                    // placeholder="blur"
+                  />
+                </div>
+                <p>Streamline Operations</p>
+              </div>
+              <div className={styles.heroItem}>
+                <div className={styles.heroItemImg}>
+                  <Image
+                    src={growth}
+                    alt="upward trending graph"
+                    priority
+                    unoptimized
+                    objectFit="cover"
+                    layout="fill"
+                    //placeholder="blur"
+                  />
+                </div>
+                <p>Focus on Growth</p>
+              </div>
+              <div className={styles.heroItem}>
+                <div className={styles.heroItemImg}>
+                  <Image
+                    src={cashFlow}
+                    alt="money sign with arrows around it"
+                    priority
+                    unoptimized
+                    objectFit="cover"
+                    layout="fill"
+                    // placeholder="blur"
+                  />
+                </div>
+                <p>Optimize Cash Flow</p>
+              </div>
+            </div>
+            <ScheduleButton isCenter={true} />
+          </div>
+        </div>
         <div className={styles.multiContHead}>
           <h2 className={styles.multiConth2}>
             Break Free From Administrative Overwhelm
